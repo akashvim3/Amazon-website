@@ -119,8 +119,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or feedback, feel free to reach out:
 
 - **Email**: ajyak749@gmail.com
-- **GitHub**: [your-username](https://github.com/akashvim3)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/akashvimal)
+- **GitHub**: [Akashvim3](https://github.com/akashvim3)
+- **LinkedIn**: [Akash vimal](https://linkedin.com/in/akashvimal)
 
 ---
 
