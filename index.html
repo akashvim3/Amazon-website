@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Website Clone | Akash Vimal</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <meta name="description"
+        content="Amazon Clone - Your one-stop shop for all your shopping needs. Discover great deals on electronics, fashion, home goods, and more.">
+    <meta name="keywords" content="Amazon, shopping, e-commerce, online shopping, deals, electronics, fashion">
+    <meta name="author" content="Akash Vimal">
+    <meta property="og:title" content="Amazon Clone - Online Shopping">
+    <meta property="og:description" content="Your one-stop shop for all your shopping needs">
+    <meta property="og:type" content="website">
+    <title>Amazon Clone | Shop Online - Electronics, Fashion, Home & More</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/amazon_logo.png" type="image/png">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-logo">
-                <a href="#"><img src="assets/images/amazon_logo.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/amazon_logo.png" alt="Amazon Logo"></a>
             </div>
+
             <div class="address">
-                <a href="#" class="deliver">Deliver</a>
+                <a href="#" class="deliver">Deliver to</a>
                 <div class="map-icon">
                     <span class="material-symbols-outlined">location_on</span>
                     <a href="#" class="location">Lucknow</a>
@@ -23,47 +34,52 @@
             </div>
 
             <div class="nav-search">
-                <select class="select-search">
+                <select class="select-search" aria-label="Search in">
                     <option>All</option>
                     <option>All Categories</option>
                     <option>Amazon Devices</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home & Kitchen</option>
+                    <option>Sports & Outdoors</option>
+                    <option>Books</option>
                 </select>
-                <input type="text" placeholder="Search Amazon" class="search-input">
-                <div class="search-icon">
+                <input type="text" placeholder="Search Amazon" class="search-input" aria-label="Search Amazon">
+                <div class="search-icon" role="button" aria-label="Search">
                     <span class="material-symbols-outlined">search</span>
                 </div>
             </div>
 
             <div class="sign-in">
-                <a href="#">
+                <a href="login.html">
                     <p>Hello, sign in</p>
-                    <span>Account &amp; Lists</span>
+                    <span>Account & Lists</span>
                 </a>
             </div>
 
             <div class="returns">
                 <a href="#">
                     <p>Returns</p>
-                    <span>&amp; Orders</span>
+                    <span>& Orders</span>
                 </a>
             </div>
 
             <div class="cart">
-                <a href="#">
+                <a href="cart.html" aria-label="Cart">
                     <span class="material-symbols-outlined cart-icon">shopping_cart</span>
                 </a>
-                <p>Cart</p>
+                <p id="cart-count">0</p>
             </div>
         </nav>
 
         <div class="banner">
             <div class="banner-content">
-                <div class="panel">
+                <div class="panel" role="button" tabindex="0">
                     <span class="material-symbols-outlined">menu</span>
                     <a href="#">All</a>
                 </div>
 
-                <ul class="links">
+                <ul class="links" role="navigation">
                     <li><a href="#">Today's Deals</a></li>
                     <li><a href="#">Customer Service</a></li>
                     <li><a href="#">Registry</a></li>
@@ -77,35 +93,121 @@
         </div>
     </header>
 
-    <section class="hero-section"></section>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Amazon Clone</h1>
+            <p>Discover millions of products with great deals. Shop now and enjoy fast delivery!</p>
+            <a href="#shop" class="hero-btn">Start Shopping</a>
+        </div>
+    </section>
 
-    <section class="shop-section">
+    <section id="shop" class="shop-section">
+        <h2 class="section-title">Featured Products</h2>
         <div class="shop-images">
             <div class="shop-link">
-                <h3>Shop Laptops &amp; Tables</h3>
-                <img src="assets/images/img-1.png" alt="card">
-                <a href="#">Shop now</a>
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Laptop and Tablet">
+                <h3>Shop Laptops & Tablets</h3>
+                <p>Powerful computing on the go</p>
+                <a href="products.html?category=laptops">Shop now</a>
             </div>
             <div class="shop-link">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Smart Watch">
                 <h3>Shop Smartwatches</h3>
-                <img src="assets/images/img-2.png" alt="card">
-                <a href="#">Shop now</a>
+                <p>Stay connected in style</p>
+                <a href="products.html?category=smartwatches">Shop now</a>
             </div>
             <div class="shop-link">
-                <h3>Create with Strip Lights</h3>
-                <img src="assets/images/img-3.png" alt="card">
-                <a href="#">Shop now</a>
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="LED Strip Lights">
+                <h3>LED Strip Lights</h3>
+                <p>Create the perfect ambiance</p>
+                <a href="products.html?category=lighting">Shop now</a>
             </div>
             <div class="shop-link">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400" alt="Home Furniture">
                 <h3>Home Refresh Ideas</h3>
-                <img src="assets/images/img-4.png" alt="card">
-                <a href="#">Shop now</a>
+                <p>Transform your living space</p>
+                <a href="products.html?category=home">Shop now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <div class="categories-container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=100" alt="Electronics">
+                    <h4>Electronics</h4>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=100" alt="Fashion">
+                    <h4>Fashion</h4>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=100" alt="Home">
+                    <h4>Home & Kitchen</h4>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=100" alt="Sports">
+                    <h4>Sports & Outdoors</h4>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=100" alt="Books">
+                    <h4>Books</h4>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=100" alt="Beauty">
+                    <h4>Beauty & Personal Care</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="deal-section">
+        <div class="deal-container">
+            <div class="deal-content">
+                <h2>Deal of the Day</h2>
+                <p>Up to 40% off on premium electronics. Limited time offer!</p>
+                <a href="#" class="deal-btn">Shop Today's Deals</a>
+            </div>
+            <div class="deal-image">
+                <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=500" alt="Deal of the Day">
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <h2 class="section-title">More to Explore</h2>
+        <div class="shop-images">
+            <div class="shop-link">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400" alt="Smart Watch">
+                <h3>Wearable Technology</h3>
+                <p>Track your fitness goals</p>
+                <a href="products.html?category=wearables">See more</a>
+            </div>
+            <div class="shop-link">
+                <img src="https://images.unsplash.com/photo-1550254478-ead40cc54513?w=400" alt="Headphones">
+                <h3>Audio & Headphones</h3>
+                <p>Immersive sound experience</p>
+                <a href="products.html?category=audio">Shop now</a>
+            </div>
+            <div class="shop-link">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Camera">
+                <h3>Camera & Photography</h3>
+                <p>Capture every moment</p>
+                <a href="products.html?category=cameras">Explore</a>
+            </div>
+            <div class="shop-link">
+                <img src="https://images.unsplash.com/photo-1585338447937-7082f8fc763d?w=400" alt="Gaming">
+                <h3>Gaming Accessories</h3>
+                <p>Level up your gaming</p>
+                <a href="products.html?category=gaming">See more</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <a href="#" class="footer-title">
+        <a href="#" class="footer-title" id="back-to-top">
             Back to top
         </a>
         <div class="footer-items">
@@ -118,9 +220,9 @@
             </ul>
             <ul>
                 <h3>Connect with Us</h3>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
             <ul>
                 <h3>Make Money with Us</h3>
@@ -143,8 +245,12 @@
                 <li><a href="#">Help</a></li>
             </ul>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Amazon Clone. All rights reserved. | Created by <a href="#">Akash Vimal</a></p>
+        </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
